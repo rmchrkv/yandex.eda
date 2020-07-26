@@ -55,7 +55,7 @@ from orders o
 left join promocodes p
 	on o.promocode_id = p.id;
 
---доля промокодов с заказами
+--share of orders with promocodes
 select 1.0*with_promocode/total_orders as share_with_promocode 
 from 
 (
@@ -72,7 +72,7 @@ from
 	) t1
 ) t2;
 
---промокод с наибольшими затратами
+-- promocode with the greatest total spending
 select 
 	promocode_name,
 	total_spending
