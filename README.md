@@ -1,2 +1,2 @@
-# yandex.eda
+# yandex.eda analyst application
  
